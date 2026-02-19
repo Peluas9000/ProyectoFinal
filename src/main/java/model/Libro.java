@@ -11,7 +11,10 @@ package model;
 
 import java.sql.Date;
 
+
 public class Libro {
+    
+    // Atributos mínimos exigidos por el enunciado
     private String isbn;
     private String titulo;
     private String autor;
@@ -19,6 +22,8 @@ public class Libro {
     private Date fechaPublicacion;
     private String rutaPortada;
     private String rutaResumen;
+    
+    // Atributo lógico para gestionar si se puede prestar o reservar
     private int copiasDisponibles;
 
     public Libro() {
@@ -35,7 +40,6 @@ public class Libro {
         this.copiasDisponibles = copiasDisponibles;
     }
 
-    // --- GETTERS Y SETTERS ---
     public String getIsbn() { return isbn; }
     public void setIsbn(String isbn) { this.isbn = isbn; }
 

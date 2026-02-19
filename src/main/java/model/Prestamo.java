@@ -17,7 +17,7 @@ public class Prestamo {
     private String libroIsbn;
     private Date fechaPrestamo;
     private Date fechaDevolucion;
-    private String estado;
+    private String estado; // Ejemplo: "ACTIVO", "DEVUELTO", "PRORROGADO"
 
     public Prestamo() {
     }
@@ -31,7 +31,6 @@ public class Prestamo {
         this.estado = estado;
     }
 
-    // --- GETTERS Y SETTERS ---
     public int getIdPrestamo() { return idPrestamo; }
     public void setIdPrestamo(int idPrestamo) { this.idPrestamo = idPrestamo; }
 

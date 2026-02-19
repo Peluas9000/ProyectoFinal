@@ -9,6 +9,7 @@ package model;
  * @author ayoub
  */
 
+
 import java.sql.Date;
 
 public class Reserva {
@@ -16,7 +17,7 @@ public class Reserva {
     private String usuarioId;
     private String libroIsbn;
     private Date fechaReserva;
-    private String estado;
+    private String estado; // Ejemplo: "PENDIENTE", "COMPLETADA"
 
     public Reserva() {
     }
@@ -29,7 +30,6 @@ public class Reserva {
         this.estado = estado;
     }
 
-    // --- GETTERS Y SETTERS ---
     public int getIdReserva() { return idReserva; }
     public void setIdReserva(int idReserva) { this.idReserva = idReserva; }
 

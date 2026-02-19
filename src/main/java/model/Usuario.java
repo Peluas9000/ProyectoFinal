@@ -3,19 +3,21 @@ package model;
 import java.sql.Date;
 
 public class Usuario {
+    
+    // Atributos mínimos exigidos por el enunciado
     private String usuario;
-    private String password;
-    private String rol;
     private String nombre;
     private String apellidos;
     private String email;
     private Date fechaAlta;
+    
+    // Atributos lógicos para la aplicación
+    private String password;
+    private String rol; // 'ADMIN' o 'ESTUDIANTE'
 
-    // Constructor vacío (Muy útil para los DAOs al leer de la BD)
     public Usuario() {
     }
 
-    // Constructor con parámetros
     public Usuario(String usuario, String password, String rol, String nombre, String apellidos, String email, Date fechaAlta) {
         this.usuario = usuario;
         this.password = password;
@@ -26,7 +28,6 @@ public class Usuario {
         this.fechaAlta = fechaAlta;
     }
 
-    // --- GETTERS Y SETTERS ---
     public String getUsuario() { return usuario; }
     public void setUsuario(String usuario) { this.usuario = usuario; }
 
@@ -50,6 +51,6 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return nombre + " " + apellidos + " (" + rol + ")";
+        return nombre + " " + apellidos + " (" + usuario + ")";
     }
 }
