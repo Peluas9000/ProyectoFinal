@@ -91,7 +91,7 @@ public class AdminViewController implements Initializable {
         cargarTodasLasTablas();
         
         comboFiltroGenero.valueProperty().addListener((obs, oldValue, newValue) -> {
-            refrescarTablaLibros();
+            refrescarTablaLibros();                       
         });
         
         // Detectar clics en la tabla de Libros para pasar los datos al formulario

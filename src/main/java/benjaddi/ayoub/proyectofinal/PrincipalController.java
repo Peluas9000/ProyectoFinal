@@ -32,7 +32,7 @@ public class PrincipalController {
         cargarVista("registro.fxml");
     }
 
-    // Método mágico que cambia el contenido del panel
+    
     private void cargarVista(String archivoFxml) {
         try {
             // Carga el archivo FXML
